@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public int money;
+    public int maxChange;
+    public int livingCost;
+
+    public void applyEffect(Effect app)
+    {
+        this.money = this.money + app.diffMoney;
+        this.maxChange = this.maxChange + app.diffGet;
+        this.livingCost = this.livingCost + app.diffCost;
+    }
+
+    public void nextTurn()
+    {
+        Random random = new Random();
+        this.money = this.money + Random.Range(0, this.maxChange) - this.livingCost;
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{00DF2E07-DD1C-8574-7E91-2615AAE49E40}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/QuestionObject.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/Effect.cs" Line="15" Column="6" />
-      <File FileName="Assets/Scripts/Question.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/Effect.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Question.cs" Line="38" Column="41" />
       <File FileName="../../FerrariGames/Stats/Assets/scripts/buttonPress.cs" />
       <File FileName="../../OtherProjects/WBGamesCodingChallenge/WBGamesCodingChallenge/GameModel.cs" Line="60" Column="47" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="19" Column="21" />
-      <File FileName="Assets/Scripts/QuestionObject.cs" Line="5" Column="28" />
+      <File FileName="Assets/Scripts/Manager.cs" Line="22" Column="81" />
+      <File FileName="Assets/Scripts/QuestionObject.cs" Line="19" Column="38" />
+      <File FileName="Assets/Scripts/Player.cs" Line="20" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +15,7 @@
           <Node name="GoldRush" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="QuestionObject.cs" selected="True" />
+                <Node name="Player.cs" selected="True" />
               </Node>
             </Node>
           </Node>
