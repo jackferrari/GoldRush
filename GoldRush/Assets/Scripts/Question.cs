@@ -4,20 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Question : MonoBehaviour
-{ 
+{
+    public GameObject manager;
 
     private Effect rightAnswer;
     private Effect leftAnswer;
-    private Effect retEffect;
 
     public Text question;
     public Text rightText;
     public Text leftText;
-    public Text selected;
 
-    private void Start()
+    void SetUp(QuestionObject curr)
     {
-        QuestionObject curr = Manager.GetValid();
         this.rightAnswer = curr.right;
         this.leftAnswer = curr.left;
         this.rightText.text = curr.rightChoice;
@@ -25,24 +23,16 @@ public class Question : MonoBehaviour
         this.question.text = curr.question;
     }
 
-    public void effectClick(string Answer)
+    public void EffectClick(string Answer)
     {
         switch (Answer)
         {
             case "Right":
-                retEffect = rightAnswer;
-                selected.text = rightText.text;
+                manager.SendMessage("UpdatePlayer", rightAnswer);
                 break;
             case "Left":
-                retEffect = leftAnswer;
-                selected.text = leftText.text;
+                manager.SendMessage("UpdatePlayer", leftAnswer);
                 break;
         }
     }
-
-    public Effect getActiveEffect()
-    {
-        return retEffect;
-    }
-
 }

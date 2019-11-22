@@ -2,12 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
       <File FileName="Assets/Scripts/Effect.cs" Line="15" Column="1" />
-      <File FileName="Assets/Scripts/Question.cs" Line="38" Column="41" />
-      <File FileName="../../FerrariGames/Stats/Assets/scripts/buttonPress.cs" />
-      <File FileName="../../OtherProjects/WBGamesCodingChallenge/WBGamesCodingChallenge/GameModel.cs" Line="60" Column="47" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="22" Column="81" />
-      <File FileName="Assets/Scripts/QuestionObject.cs" Line="19" Column="38" />
-      <File FileName="Assets/Scripts/Player.cs" Line="20" Column="32" />
+      <File FileName="Assets/Scripts/Player.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/Question.cs" />
+      <File FileName="Assets/Scripts/Manager.cs" />
+      <File FileName="Assets/Scripts/QuestionObject.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +21,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.GoldRush PreferredExecutionTarget="ae52ed06-4ea6-4756-96a7-a239d0069552" />
+  <MonoDevelop.Ide.ItemProperties.GoldRush PreferredExecutionTarget="5fae3415-3e92-4168-b5c4-6d79ed216655" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
