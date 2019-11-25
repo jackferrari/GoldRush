@@ -113,11 +113,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AllQuestions.cs" />
+    <Compile Include="Assets\Scripts\AManager.cs" />
     <Compile Include="Assets\Scripts\Effect.cs" />
-    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\ImmigrantManager.cs" />
+    <Compile Include="Assets\Scripts\ImmigrantQuestions.cs" />
+    <Compile Include="Assets\Scripts\MenuButtons.cs" />
+    <Compile Include="Assets\Scripts\Nugget.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Question.cs" />
     <Compile Include="Assets\Scripts\QuestionObject.cs" />
+    <Compile Include="Assets\Scripts\SpawnNugget.cs" />
+    <Compile Include="Assets\Scripts\WhiteManager.cs" />
     <Compile Include="Assets\Scripts\WhiteQuestions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

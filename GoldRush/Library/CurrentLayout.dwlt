@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 99
+  controlID: 43
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 45
+  controlID: 44
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 46
+  controlID: 45
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,19 +298,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/jackferrari/Desktop/GoldRush/GoldRush
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 42260000
-    m_LastClickedID: 9794
-    m_ExpandedIDs: 000000004226000000ca9a3bffffff7f
+    m_SelectedIDs: 74260000
+    m_LastClickedID: 9844
+    m_ExpandedIDs: 000000005a26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000042260000
+    m_ExpandedIDs: 000000005a260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,9 +454,9 @@ MonoBehaviour:
     height: 412
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e3e0000
-    m_LastClickedID: 15902
-    m_ExpandedIDs: f8e7f8ff4865f9ffa865f9ffa466f9ff507cfcffa27cfcff9e7dfcff0ef3fdff60f3fdff5cf4fdff4ce1feffdceafeff32ebfeff30ecfeff22fffeff78fffeff7600ffffea0affff440bffff400cffff18fcffff000000007e26000098260000302900004a290000c22a0000d42a0000ac2c0000be2c00005c2e0000762e00007c2e0000d6310000f8310000f03d0000183e0000
+    m_SelectedIDs: e8f5feff
+    m_LastClickedID: -68120
+    m_ExpandedIDs: 1cf9ffff16fcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -475,7 +475,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Main
+  - MainMenu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -506,14 +506,14 @@ MonoBehaviour:
     width: 845
     height: 412
   m_SceneLighting: 1
-  lastFramingTime: 90380.22198998928
+  lastFramingTime: 687.0368309020996
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 632.0343, y: 377.9671, z: 0}
+    m_Target: {x: 0, y: -10, z: 0}
     speed: 2
-    m_Value: {x: 632.0343, y: 377.9671, z: 0}
+    m_Value: {x: 0, y: -10, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -540,9 +540,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1197.3389
+    m_Target: 22
     speed: 2
-    m_Value: 1197.3389
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -582,15 +582,15 @@ MonoBehaviour:
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -256
-    m_HBaseRangeMax: 256
-    m_VBaseRangeMin: -192
-    m_VBaseRangeMax: 192
+    m_HBaseRangeMin: -360
+    m_HBaseRangeMax: 360
+    m_VBaseRangeMin: -225
+    m_VBaseRangeMax: 225
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -609,7 +609,7 @@ MonoBehaviour:
       y: 17
       width: 845
       height: 395
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 0.87777776, y: 0.87777776}
     m_Translation: {x: 422.5, y: 197.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -617,12 +617,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -422.5
-      y: -197.5
-      width: 845
-      height: 395
+      x: -481.32913
+      y: -225
+      width: 962.65826
+      height: 450
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.87777776
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1690, y: 824}
