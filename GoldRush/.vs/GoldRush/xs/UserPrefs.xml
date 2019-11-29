@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{00DF2E07-DD1C-8574-7E91-2615AAE49E40}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../FerrariGames/FerrariTestingOutStuff/Assets/scripts/GameScripts/shoot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Managers/AManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/AManager.cs" Line="10" Column="14" />
-      <File FileName="Assets/Scripts/ImmigrantQuestions.cs" Line="31" Column="43" />
-      <File FileName="Assets/Scripts/WhiteQuestions.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/MenuButtons.cs" Line="12" Column="1" />
-      <File FileName="../../FerrariGames/FerrariTestingOutStuff/Assets/scripts/GameScripts/SpawnArrows.cs" Line="37" Column="70" />
-      <File FileName="Assets/Scripts/SpawnNugget.cs" Line="12" Column="30" />
-      <File FileName="Assets/Scripts/Nugget.cs" Line="13" Column="19" />
-      <File FileName="../../FerrariGames/FerrariTestingOutStuff/Assets/scripts/GameScripts/shoot.cs" Line="13" Column="37" />
+      <File FileName="Assets/Scripts/AManager.cs" Line="44" Column="56" />
+      <File FileName="Assets/Scripts/WhiteManager.cs" Line="9" Column="40" />
+      <File FileName="Assets/Scripts/ImmigrantManager.cs" Line="27" Column="6" />
+      <File FileName="Assets/Scripts/Player.cs" Line="45" Column="65" />
+      <File FileName="Assets/Scripts/Effect.cs" Line="5" Column="14" />
+      <File FileName="Assets/Scripts/EndScene.cs" Line="27" Column="63" />
+      <File FileName="Assets/Scripts/MenuButtons.cs" Line="9" Column="34" />
+      <File FileName="Assets/Scripts/Question.cs" Line="31" Column="64" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,10 @@
           <Node name="GoldRush" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="SpawnNugget.cs" selected="True" />
+                <Node name="Managers" expanded="True">
+                  <Node name="AManager.cs" selected="True" />
+                </Node>
+                <Node name="Question" expanded="True" />
               </Node>
             </Node>
           </Node>

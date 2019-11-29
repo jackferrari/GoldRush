@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 7fc883204ec3741139e8f6933b73f5cf
   - enabled: 1
+    path: Assets/Scenes/White.unity
+    guid: 4af6796e2fffc4cfd8ed54a4897535da
+  - enabled: 1
     path: Assets/Scenes/Immigrant.unity
     guid: c8644d4fd536744f0b8c6dbfb268d796
   - enabled: 1
-    path: Assets/Scenes/White.unity
-    guid: 4af6796e2fffc4cfd8ed54a4897535da
+    path: Assets/Scenes/End.unity
+    guid: bbc10f0b1de694c688a7cbcf4f9daaff
