@@ -66,7 +66,7 @@ public abstract class AManager: MonoBehaviour {
         turn++;
         player.SendMessage("NextTurn", a.applyEffect);
         UpdateQuestion();
-        if (this.turn % 4 == 0)
+        if (this.turn % 3 == 0)
         {
             this.yearVal++;
             Effect reduce = new Effect(0, -5, 0);

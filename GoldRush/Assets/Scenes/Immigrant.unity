@@ -214,7 +214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 0}
+  m_AnchoredPosition: {x: 98, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167696433
@@ -976,7 +976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130, y: -60}
+  m_AnchoredPosition: {x: -103, y: -60}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588073654
@@ -1011,7 +1011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Last Quarter Cost:'
+  m_Text: 'Cost of Living:'
 --- !u!222 &588073655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130, y: 0}
+  m_AnchoredPosition: {x: -98, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089432400
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Last Quarter Gold:'
+  m_Text: 'Gold Income:'
 --- !u!222 &1089432401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1930,6 +1930,7 @@ MonoBehaviour:
   otherIncome: {fileID: 347474484}
   cost: {fileID: 1857003247}
   gold: {fileID: 167696433}
+  immigrant: 0
   cash: 0
   maxChange: 0
   livingCost: 0
@@ -1964,6 +1965,7 @@ MonoBehaviour:
   questionObject: {fileID: 1728076877}
   hider: {fileID: 1680379839}
   info: {fileID: 1471926596}
+  contButton: {fileID: 0}
   year: {fileID: 1195082909}
 --- !u!4 &1568912030
 Transform:
@@ -2206,7 +2208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 0}
+  m_AnchoredPosition: {x: 103, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857003247
