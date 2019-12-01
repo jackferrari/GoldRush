@@ -21,16 +21,12 @@ public abstract class AManager: MonoBehaviour {
     protected AllQuestions questions;
     protected QuestionObject lastQuestion;
 
-    protected void BasicSetUp()
+    protected void BasicSetUp(QuestionObject QO)
     {
-        Effect r = new Effect(0, 1, 2);
-        Effect l = new Effect(3, 4, 5);
-
         this.yearVal = 1849;
         this.year.text = "" + this.yearVal;
         this.hider.SetActive(false);
 
-        QuestionObject QO = new QuestionObject(r, l, "You arive in California! Do you try to build your own homestead or move into an existing community?", "Homestead", "Community", "You build a house", "You find a community");
         this.lastQuestion = QO;
         questionObject.SendMessage("SetUp", QO);
         Effect ltEffect = new Effect(50, 30, 10);
@@ -66,7 +62,7 @@ public abstract class AManager: MonoBehaviour {
         turn++;
         player.SendMessage("NextTurn", a.applyEffect);
         UpdateQuestion();
-        if (this.turn % 3 == 0)
+        if (this.turn % 2 == 0)
         {
             this.yearVal++;
             Effect reduce = new Effect(0, -5, 0);

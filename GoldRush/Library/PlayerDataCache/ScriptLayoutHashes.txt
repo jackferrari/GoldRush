@@ -14,7 +14,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 c24a21b131bfa67be1162db2cba4b52b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 f8944faca515267ee68e97345bba3791 Assembly-CSharp.dll:.WhiteManager
 75a1db7b38b182182a9872894757dae9 Assembly-CSharp.dll:.Question
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuButtons
+27040dbb3bb8baf5dca26a438ee94612 Assembly-CSharp.dll:.MenuButtons
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
