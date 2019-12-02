@@ -1856,6 +1856,7 @@ MonoBehaviour:
   otherIncome: {fileID: 1913335843}
   cost: {fileID: 439779092}
   gold: {fileID: 740270981}
+  retire: {fileID: 959423809}
   immigrant: 0
   cash: 0
   maxChange: 0
@@ -2037,6 +2038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1824004985}
   questionObject: {fileID: 1683507877}
+  retireButton: {fileID: 0}
   hider: {fileID: 847535215}
   info: {fileID: 104493763}
   contButton: {fileID: 155335020}

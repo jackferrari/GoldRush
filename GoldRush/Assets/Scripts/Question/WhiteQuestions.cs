@@ -11,7 +11,7 @@ public class WhiteQuestions : AllQuestions {
         Effect hiredFriend = new Effect(0, 10, 20);
         Effect startedPayingMore = new Effect(0, 0, 10);
         Effect nothingNew = new Effect(0, 0, 0);
-        Effect kickedOutNatives = new Effect(0, 20, 0);
+        Effect kickedOutNatives = new Effect(10, 20, 0);
         Effect joinedSmallCompany = new Effect(10, -5, -3);
         Effect gotSickForAWhile = new Effect(0, -20, 5);
         Effect claimBoughtOut = new Effect(30, -30, 5);
@@ -146,5 +146,17 @@ public class WhiteQuestions : AllQuestions {
         this.allPossibleQuestions.Add(q13);
         this.allPossibleQuestions.Add(q14);
         this.allPossibleQuestions.Add(q15);
+        this.lastQuestion = new QuestionObject(null, null, "", "", "", "", "");
+    }
+
+    protected override QuestionObject GetQuestionObject(int year)
+    {
+        QuestionObject potential = this.allPossibleQuestions[Random.Range(0, allPossibleQuestions.Count)];
+        while (potential.question == this.lastQuestion.question)
+        {
+            potential = this.allPossibleQuestions[Random.Range(0, this.allPossibleQuestions.Count)];
+        }
+        this.lastQuestion = potential;
+        return potential;
     }
 }

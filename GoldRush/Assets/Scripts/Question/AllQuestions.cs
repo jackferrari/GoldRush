@@ -5,9 +5,12 @@ using UnityEngine;
 public abstract class AllQuestions {
 
     protected List<QuestionObject> allPossibleQuestions;
+    protected QuestionObject lastQuestion;
 
-    public List<QuestionObject> getValidQuestions()
+    public QuestionObject getValidQuestion(int year)
     {
-        return this.allPossibleQuestions;
+        return this.GetQuestionObject(year);
     }
+
+    protected abstract QuestionObject GetQuestionObject(int year);
 }

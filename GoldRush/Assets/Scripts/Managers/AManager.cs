@@ -7,6 +7,7 @@ public abstract class AManager: MonoBehaviour {
 
     public GameObject player;
     public GameObject questionObject;
+    public GameObject retireButton;
 
     public GameObject hider;
     public Text info;
@@ -29,7 +30,7 @@ public abstract class AManager: MonoBehaviour {
 
         this.lastQuestion = QO;
         questionObject.SendMessage("SetUp", QO);
-        Effect ltEffect = new Effect(50, 30, 10);
+        Effect ltEffect = new Effect(30, 30, 10);
         player.SendMessage("ApplyLongTermEffect", ltEffect);
     }
 
@@ -48,32 +49,35 @@ public abstract class AManager: MonoBehaviour {
 
     protected QuestionObject GetGoodQuestion()
     {
-        List<QuestionObject> options = this.questions.getValidQuestions();
-        QuestionObject potential = options[Random.Range(0, options.Count - 1)];
-        while (potential.question == this.lastQuestion.question)
-        {
-            potential = options[Random.Range(0, options.Count - 1)];
-        }
-        return potential;
+        return this.questions.getValidQuestion(this.yearVal);
     }
 
     protected void UpdatePlayer(Answer a)
     {
-        turn++;
-        player.SendMessage("NextTurn", a.applyEffect);
-        UpdateQuestion();
-        if (this.turn % 2 == 0)
+        if (a.outcome.Contains("deport"))
         {
-            this.yearVal++;
-            Effect reduce = new Effect(0, -5, 0);
-            player.SendMessage("ApplyLongTermEffect", reduce);
+            PlayerPrefs.SetString("Deported", "was");
+            EndSequence();
         }
-        if (this.yearVal == 1855)
+        else
         {
-            this.contButton.text = "End Game";
+            turn++;
+            player.SendMessage("NextTurn", a.applyEffect);
+            UpdateQuestion();
+            if (this.turn % 2 == 0)
+            {
+                this.yearVal++;
+                Effect reduce = new Effect(0, -5, 0);
+                player.SendMessage("ApplyLongTermEffect", reduce);
+            }
+            if (this.yearVal == 1855)
+            {
+                this.contButton.text = "End Game";
+            }
+            this.hider.SetActive(true);
+            this.info.text = a.outcome;
         }
-        this.hider.SetActive(true);
-        this.info.text = a.outcome;
+
     }
 
     public void EndSequence()

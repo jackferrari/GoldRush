@@ -18,12 +18,13 @@ public class ImmigrantQuestions : AllQuestions {
         Effect gotSickForAWhile = new Effect(0, -20, 5);
         Effect claimBoughtOut = new Effect(30, -30, 5);
         Effect payTheMob = new Effect(0, 0, 30);
-        Effect resistTheMob = new Effect(0, -5, 50);
+        Effect resistTheMob = new Effect(0, -5, 45);
         Effect payOffCredit = new Effect(0, 0, 5);
         Effect smallGoldDecrease = new Effect(0, -5, 0);
         Effect cheapSupplies = new Effect(0, 0, -10);
         Effect gotMoreGold = new Effect(0, 5, 0);
         Effect failedCompany = new Effect(0, -5, 50);
+        Effect leftWhileYouHadTheChance = new Effect(5, -5, 10);
 
         QuestionObject q1 = new QuestionObject(getFreeMoney, nothingNew,
             "You are offered a job as a laundry worker for your camp.",
@@ -47,14 +48,14 @@ public class ImmigrantQuestions : AllQuestions {
             "Your attempts fail and you pay the ammount in full");
 
         QuestionObject q4 = new QuestionObject(new Effect(0, 0, 20), new Effect(-1000, -1000, -1000),
-            "A Foreign Miners Tax has been placed requiring you to pay a licensing fee for your claim",
+            "California passes the Foreign Miners Tax of 1850. You are forced to pay a large fee on your claims",
             "Pay",
             "Don't pay",
-            "You pay the licensing fee",
+            "You pay the tax",
             "you are deported");
 
-        QuestionObject q5 = new QuestionObject(new Effect(0, 0, 3), new Effect(-1000, -1000, -1000),
-            "The Foreign Miner's tax has been passed requiring you to pay more per month",
+        QuestionObject q5 = new QuestionObject(new Effect(0, 0, 10), new Effect(-1000, -1000, -1000),
+            "The original Foreign Miners Ta",
             "Pay now and live on less supplies in the future",
             "Don't pay",
             "You pay the new monthly fee",
@@ -109,11 +110,25 @@ public class ImmigrantQuestions : AllQuestions {
             "Your group's attempts to divert water and mine a riverbed failed due to the heavy riverbed rocks and you make no money.",
             "The River had too much water and you have difficulty finding gold.");
 
-        this.allPossibleQuestions.Add(q1);
-        this.allPossibleQuestions.Add(q2);
-        this.allPossibleQuestions.Add(q3);
+        QuestionObject q13 = new QuestionObject(leftWhileYouHadTheChance, payTheMob,
+            "You are informed the local government has banned Chinese miners from the county.",
+            "Leave",
+            "Try to stay",
+            "You grab as much money as possible and move to another county",
+            "You are are driven from the town by a mob. You left a lot behind");
+
+        QuestionObject q14 = new QuestionObject(startedPayingMore, payTheMob,
+            "You decide to send some gold back home.",
+            "Send a few small nuggets",
+            "Send much of what you have",
+            "Your family's status back in China slightly improves",
+            "Your family's status back in China greatly improves");
+
         this.allPossibleQuestions.Add(q4);
         this.allPossibleQuestions.Add(q5);
+        this.allPossibleQuestions.Add(q3);
+        this.allPossibleQuestions.Add(q1);
+        this.allPossibleQuestions.Add(q2);
         this.allPossibleQuestions.Add(q6);
         this.allPossibleQuestions.Add(q7);
         this.allPossibleQuestions.Add(q8);
@@ -121,6 +136,30 @@ public class ImmigrantQuestions : AllQuestions {
         this.allPossibleQuestions.Add(q10);
         this.allPossibleQuestions.Add(q11);
         this.allPossibleQuestions.Add(q12);
-        
+        this.allPossibleQuestions.Add(q13);
+        this.allPossibleQuestions.Add(q14);
+    }
+
+    protected override QuestionObject GetQuestionObject(int year)
+    {
+        QuestionObject potential;
+        if (year == 1850)
+        {
+            potential = this.allPossibleQuestions[0];
+        }
+        if (year == 1852)
+        {
+            potential = this.allPossibleQuestions[1];
+        }
+        else
+        {
+            potential = this.allPossibleQuestions[Random.Range(2, allPossibleQuestions.Count)];
+        }
+        while (potential.question == this.lastQuestion.question)
+        {
+            potential = this.allPossibleQuestions[Random.Range(2, this.allPossibleQuestions.Count)];
+        }
+        this.lastQuestion = potential;
+        return potential;
     }
 }
