@@ -19,6 +19,10 @@ Once the game is running, you select a role, and then click on the options that 
 
 By 1855 or when you click retire, you will reach the end screen. Here you can either replay the path you just completed, or return to the menu. On the menu you are able to click to quit the game. 
 
+# Resource Locations
+
+To look at the various game scripts, you can look in the `GoldRush/Assets/Scripts`. In this directory the `Managers` folder has all scripts that are used for overall scene logic. The `MenuScripts` directory has all the scripts for handling the main menu and end game menu. The `Player` directory has the logic for a player's money. The `Question` directory has all the logic for the various questions that the player can be asked. 
+
 # Annotated Bibliography
 
 Kanazawa, Mark. "Immigration, Exclusion, and Taxation: Anti-Chinese Legislation in Gold Rush California." The Journal of Economic History 65, no. 3 (2005): 779-805. www.jstor.org/stable/3875017. This article was useful for designing questions about descrimination against Chinese immigrants. It was also useful for information on the Foreign Miners Tax.
