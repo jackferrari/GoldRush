@@ -91,7 +91,7 @@ public class Player : MonoBehaviour
                 case 1852:
                 case 1853:
                 case 1854:
-                    PlayerPrefs.SetString("EndStory", Outcome(year) + "You leave with $" + this.cash + ".");
+                    PlayerPrefs.SetString("EndStory", Outcome(year) + " You leave with $" + this.cash + ".");
                     break;
                 case 1855:
                     PlayerPrefs.SetString("EndStory", Outcome(year));
@@ -109,27 +109,27 @@ public class Player : MonoBehaviour
     {
         if (year == 1855 && this.cash <= 0)
         {
-            return "Broke and falling deeper into debt, you sign on to an industrial mining company. You end up signing on to an industrial gold mining endevor and work as a wage miner for the rest of your life";
+            return "Broke and falling deeper into debt, you sign on to an industrial mining company. You end up signing on to an industrial gold mining endevor and work as a wage miner for the rest of your life.";
         }
         else if (year < 1851 && this.cash > 60 && !this.immigrant)
         {
-            return "You stay for a short time and leave with a decent profit. You head back east to your family, having made a decent profit and are able to expand your farm";
+            return "You stay for a short time and leave with a decent profit. You head back east to your family, having made a decent profit and are able to expand your farm.";
         }
         else if (year < 1851 && this.cash > 60 && this.immigrant)
         {
-            return "You stay for a short time and leave with a decent profit. You move to a small town and set up a small business and live the rest of your days mostly peacefully";
+            return "You stay for a short time and leave with a decent profit. You move to a small town and set up a small business and live the rest of your days mostly peacefully.";
         }
         else if (year == 1849 && this.cash == 30)
         {
-            return "This whole gold rush thing really just wasn't for you. Probably for the best you make your way home. Hope you enjoyed the trip to California";
+            return "This whole gold rush thing really just wasn't for you. Probably for the best you make your way home. Hope you enjoyed the trip to California.";
         }
         else if (year == 1855 && this.cash > 0)
         {
-            return "You were able to successfully balance the books for a long time, but now you realize that the surface gold has run out. You retire, but the years of gold mining take their toll and you are never truly healthy again";
+            return "You were able to successfully balance the books for a long time, but now you realize that the surface gold has run out. You retire, but the years of gold mining take their toll and you are never truly healthy again.";
         }
         else
         {
-            return "You are able to leave the West with a little money. However you remain weak the rest of your life from the hard living you faced in your years of gold mining";
+            return "You are able to leave the West with a little money. However you remain weak the rest of your life from the hard living you faced in your years of gold mining.";
         }
     }
 }
