@@ -129,7 +129,7 @@ public class Player : MonoBehaviour
         }
         else if (this.cash > 50)
         {
-            return "You remain weak from living in the wilderness so long, but the wealth you bring home more than compensates for this. "
+            return "You remain weak from living in the wilderness so long, but the wealth you bring home more than compensates for this. ";
         }
         else
         {
