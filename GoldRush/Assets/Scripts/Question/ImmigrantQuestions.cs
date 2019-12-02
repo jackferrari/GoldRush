@@ -122,7 +122,7 @@ public class ImmigrantQuestions : AllQuestions {
             "Send a few small nuggets",
             "Send much of what you have",
             "Your family's status back in China slightly improves",
-            "Your family's status back in China greatly improves");
+            "Your family's status back in China greatly improves and you recieve a letter informing you that you have a marriage planned if you return");
 
         this.allPossibleQuestions.Add(q4);
         this.allPossibleQuestions.Add(q5);
@@ -138,6 +138,7 @@ public class ImmigrantQuestions : AllQuestions {
         this.allPossibleQuestions.Add(q12);
         this.allPossibleQuestions.Add(q13);
         this.allPossibleQuestions.Add(q14);
+        this.lastQuestion = new QuestionObject(null, null, "", "", "", "", "");
     }
 
     protected override QuestionObject GetQuestionObject(int year)
