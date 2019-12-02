@@ -65,7 +65,7 @@ public class WhiteQuestions : AllQuestions {
             "A few people you know offer you a chance to block up a river to mine out the gold.",
             "Pay in to the company",
             "move on to find another opportunity",
-            "Your group tries to damn the river but more rain than usual slows and eventually stops you",
+            "Your group tries to dam the river but more rain than usual slows and eventually stops you",
             "You end up just panning for gold in the river");
 
         QuestionObject q7 = new QuestionObject(cheapSupplies, nothingNew,
