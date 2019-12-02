@@ -8,7 +8,7 @@ public class WhiteQuestions : AllQuestions {
     {
         this.allPossibleQuestions = new List<QuestionObject>();
         Effect decreaseGold = new Effect(0, -10, 0);
-        Effect hiredFriend = new Effect(0, 10, 20);
+        Effect hiredFriend = new Effect(0, 20, 15);
         Effect startedPayingMore = new Effect(0, 0, 10);
         Effect nothingNew = new Effect(0, 0, 0);
         Effect kickedOutNatives = new Effect(10, 20, 0);
@@ -24,7 +24,7 @@ public class WhiteQuestions : AllQuestions {
         Effect backedSmallBusiness = new Effect(50, 0, 20);
         Effect wifeIsDisgusted = new Effect(0, 0, 30);
         Effect wifeSupported = new Effect(0, 0, 15);
-        Effect nativeSudoSlave = new Effect(0, 10, 5);
+        Effect nativeSudoSlave = new Effect(0, 20, 5);
 
         QuestionObject q1 = new QuestionObject(failedCompany, gotMoreGold,
             "One of your friends offers to let you buy into his company and work there for the next couple of months. Alternatively you could continue to work at prospecting.",
@@ -125,8 +125,8 @@ public class WhiteQuestions : AllQuestions {
             "You hear that the others made a lot of money from the land they were able to take, but your decendents get to say that you didn't participate in that genocide");
 
         QuestionObject q15 = new QuestionObject(nativeSudoSlave, hiredFriend,
-            "You find that you need some help around your land",
-            "Lease a native prisoner for labor on your claim",
+            "You find that you want some help around your land",
+            "Lease a native prisoner",
             "Offer someone full pay to work for you",
             "You are able to boost your productivity while also paying very little income",
             "You end up paying a lot");

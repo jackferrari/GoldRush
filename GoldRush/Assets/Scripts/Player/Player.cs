@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Deported") && PlayerPrefs.GetString("Deported").Equals("was"))
         {
-            PlayerPrefs.SetString("EndStory", "Your refusal to pay the Foreign Miners Tax ended your mining career. The government seizes your land and locks you up. You end up being put on a boat back to China, deported");
+            PlayerPrefs.SetString("EndStory", "Your refusal to pay the Foreign Miners Tax ended your mining career. The government seizes your land and locks you up. You end up being put on a boat back to China, deported.");
         }
         else
         {
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour
                     PlayerPrefs.SetString("EndStory", Outcome(year));
                     break;
                 default:
-                    PlayerPrefs.SetString("EndStory", "There was a problem with your rushing gold");
+                    PlayerPrefs.SetString("EndStory", "There was a problem with your rushing gold.");
                     break;
             }
         }
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
     {
         if (year == 1855 && this.cash <= 0)
         {
-            return "Broke and falling deeper into debt, you sign on to an industrial mining company. You end up signing on to an industrial gold mining endevor and work as a wage miner for the rest of your life.";
+            return "Broke and falling deeper into debt, your dreams of making it on your own are over. You end up signing on to an industrial gold mining endevor and work as a wage miner for the rest of your life.";
         }
         else if (year < 1851 && this.cash > 60 && !this.immigrant)
         {
@@ -125,7 +125,11 @@ public class Player : MonoBehaviour
         }
         else if (year == 1855 && this.cash > 0)
         {
-            return "You were able to successfully balance the books for a long time, but now you realize that the surface gold has run out. You retire, but the years of gold mining take their toll and you are never truly healthy again.";
+            return "You were able to successfully balance your finances for a long time, but now you realize that the surface gold has run out. You retire, but the years of gold mining take their toll and you are never truly healthy again.";
+        }
+        else if (this.cash > 50)
+        {
+            return "You remain weak from living in the wilderness so long, but the wealth you bring home more than compensates for this. "
         }
         else
         {

@@ -9,7 +9,7 @@ public class ImmigrantManager : AManager {
     {
         Effect nothing = new Effect(0, 0, 0);
 
-        QuestionObject QO = new QuestionObject(nothing, nothing, "You arive in California! When you heard about the gold and decided to travel to America to try to strike it rich. You took out a credit agreement to pay for your passage and managed to buy a claim and hope to find opportunity in this new land",
+        QuestionObject QO = new QuestionObject(nothing, nothing, "You arive in California! When you heard about the gold you decided to travel to America to try to strike it rich. You took out a credit agreement to pay for your passage and managed to buy a claim and hope to find opportunity in this new land",
             "Welcome",
             "Welcome",
             "You have arrived. Time to find your fortune!", "" +

@@ -55,7 +55,7 @@ public class ImmigrantQuestions : AllQuestions {
             "It doesn't work very well for some time and eventually you get one from someone going back east");
 
         QuestionObject q7 = new QuestionObject(smallGoldDecrease, decreaseGold,
-            "You are not eating right and feel your teeth loosening from scurvy",
+            "You are not eating right and feel your teeth loosening from scurvy.",
             "Eat grass, it might help",
             "Try to find better food",
             "It does help...",
@@ -128,7 +128,7 @@ public class ImmigrantQuestions : AllQuestions {
     protected override QuestionObject GetQuestionObject(int year)
     {
         QuestionObject q4 = new QuestionObject(new Effect(0, 0, 20), new Effect(-1000, -1000, -1000),
-            "California passes the Foreign Miners Tax of 1850. You are forced to pay a large fee on your claims",
+            "California passes the Foreign Miners Tax of 1850. You are forced to pay a large fee on your claims. It is $20.",
             "Pay",
             "Don't pay",
             "You pay the tax",
