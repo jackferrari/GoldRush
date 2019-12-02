@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 
     public void SetEndStory(int year)
     {
-        if (PlayerPrefs.HasKey("Deported"))
+        if (PlayerPrefs.HasKey("Deported") && PlayerPrefs.GetString("Deported").Equals("was"))
         {
             PlayerPrefs.SetString("EndStory", "Your refusal to pay the Foreign Miners Tax ended your mining career. The government seizes your land and locks you up. You end up being put on a boat back to China, deported");
         }

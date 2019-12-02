@@ -47,20 +47,6 @@ public class ImmigrantQuestions : AllQuestions {
             "You pay the ammount in full.",
             "Your attempts fail and you pay the ammount in full");
 
-        QuestionObject q4 = new QuestionObject(new Effect(0, 0, 20), new Effect(-1000, -1000, -1000),
-            "California passes the Foreign Miners Tax of 1850. You are forced to pay a large fee on your claims",
-            "Pay",
-            "Don't pay",
-            "You pay the tax",
-            "you are deported");
-
-        QuestionObject q5 = new QuestionObject(new Effect(0, 0, 10), new Effect(-1000, -1000, -1000),
-            "The original Foreign Miners Ta",
-            "Pay now and live on less supplies in the future",
-            "Don't pay",
-            "You pay the new monthly fee",
-            "you are deported");
-
         QuestionObject q6 = new QuestionObject(startedPayingMore, decreaseGold,
             "Your cradle breaks. You need a cradle to seperate dirt and gold, so you decide to replace it.",
             "You buy a new one",
@@ -124,8 +110,6 @@ public class ImmigrantQuestions : AllQuestions {
             "Your family's status back in China slightly improves",
             "Your family's status back in China greatly improves and you recieve a letter informing you that you have a marriage planned if you return");
 
-        this.allPossibleQuestions.Add(q4);
-        this.allPossibleQuestions.Add(q5);
         this.allPossibleQuestions.Add(q3);
         this.allPossibleQuestions.Add(q1);
         this.allPossibleQuestions.Add(q2);
@@ -143,22 +127,36 @@ public class ImmigrantQuestions : AllQuestions {
 
     protected override QuestionObject GetQuestionObject(int year)
     {
+        QuestionObject q4 = new QuestionObject(new Effect(0, 0, 20), new Effect(-1000, -1000, -1000),
+            "California passes the Foreign Miners Tax of 1850. You are forced to pay a large fee on your claims",
+            "Pay",
+            "Don't pay",
+            "You pay the tax",
+            "you are deported");
+
+        QuestionObject q5 = new QuestionObject(new Effect(0, 0, 10), new Effect(-1000, -1000, -1000),
+            "The original Foreign Miners Tax has been was repealed, but has now been replaced with a new Foreign Miners Tax.",
+            "Pay now and live on less supplies in the future",
+            "Don't pay",
+            "You pay the new monthly fee",
+            "you are deported");
+
         QuestionObject potential;
         if (year == 1850)
         {
-            potential = this.allPossibleQuestions[0];
+            potential = q4;
         }
-        if (year == 1852)
+        else if (year == 1852)
         {
-            potential = this.allPossibleQuestions[1];
+            potential = q5;
         }
         else
         {
-            potential = this.allPossibleQuestions[Random.Range(2, allPossibleQuestions.Count)];
+            potential = this.allPossibleQuestions[Random.Range(0, allPossibleQuestions.Count)];
         }
         while (potential.question == this.lastQuestion.question)
         {
-            potential = this.allPossibleQuestions[Random.Range(2, this.allPossibleQuestions.Count)];
+            potential = this.allPossibleQuestions[Random.Range(0, this.allPossibleQuestions.Count)];
         }
         this.lastQuestion = potential;
         return potential;

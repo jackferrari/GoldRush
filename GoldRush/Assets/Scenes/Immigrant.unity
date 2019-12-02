@@ -1663,7 +1663,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 48
+    m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1964,10 +1964,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1564848329}
   questionObject: {fileID: 1728076877}
-  retireButton: {fileID: 0}
+  retireButton: {fileID: 450553530}
   hider: {fileID: 1680379839}
   info: {fileID: 1471926596}
-  contButton: {fileID: 0}
+  contButton: {fileID: 2056283346}
   year: {fileID: 1195082909}
 --- !u!4 &1568912030
 Transform:

@@ -27,6 +27,7 @@ public abstract class AManager: MonoBehaviour {
         this.yearVal = 1849;
         this.year.text = "" + this.yearVal;
         this.hider.SetActive(false);
+        PlayerPrefs.SetString("Deported", "not yet");
 
         this.lastQuestion = QO;
         questionObject.SendMessage("SetUp", QO);
@@ -63,13 +64,13 @@ public abstract class AManager: MonoBehaviour {
         {
             turn++;
             player.SendMessage("NextTurn", a.applyEffect);
-            UpdateQuestion();
             if (this.turn % 2 == 0)
             {
                 this.yearVal++;
                 Effect reduce = new Effect(0, -5, 0);
                 player.SendMessage("ApplyLongTermEffect", reduce);
             }
+            UpdateQuestion();
             if (this.yearVal == 1855)
             {
                 this.contButton.text = "End Game";
