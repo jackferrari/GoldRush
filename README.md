@@ -9,7 +9,7 @@ In an effort to show these stories, I have created a video game that represents 
 Using various historians’ analysis of miner’s everyday life along with actual letters that miners sent home to their families and friends, both paths have been constructed to feature choices that a similar individual would have to face. Choices in the game affect how much money you have. Every turn a random number within a constantly shrinking range is calculated to represent the gold, and a number is subtracted from that gold to represent the monthly expenses. This calculated number is then added to the total money of the player. There will often be choices that force the player to put themselves in a situation where they only lose money. This design is there to show how luck was a key determiner of who got rich in the Gold Rush. The player does not choose the questions, so they need to be lucky and not stumble into bad scenarios. However, given the realities of the Gold Rush the set of questions has been designed such that it is very rare for a player to end with a lot of money.
 The final piece of the game is the retire button. This button is available so long as the player has a positive amount of money. This button offers leaving as an ever present option, so long as you have money. Many miners would only stay for a short time, and I wanted to include this option within my game. This restriction helps highlight the idea of getting trapped in the gold mines after they were industrialized. Players who can’t leave before 1855 are forced to enter into an industrial gold mining operation and never get the option to go home rich. Through this overall design, the game will refute the common myths of the Gold Rush and provide players with a more complete understanding of that historical era. 
 
-#Running the Game
+# Running the Game
 
 This game requires a mac to run.
 
@@ -19,7 +19,7 @@ Once the game is running, you select a role, and then click on the options that 
 
 By 1855 or when you click retire, you will reach the end screen. Here you can either replay the path you just completed, or return to the menu. On the menu you are able to click to quit the game. 
 
-#Annotated Bibliography
+# Annotated Bibliography
 
 Kanazawa, Mark. "Immigration, Exclusion, and Taxation: Anti-Chinese Legislation in Gold Rush California." The Journal of Economic History 65, no. 3 (2005): 779-805. www.jstor.org/stable/3875017. This article was useful for designing questions about descrimination against Chinese immigrants. It was also useful for information on the Foreign Miners Tax.
 
