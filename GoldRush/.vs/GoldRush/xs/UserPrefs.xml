@@ -2,13 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Player.cs">
     <Files>
       <File FileName="Assets/Scripts/AManager.cs" Line="30" Column="54" />
-      <File FileName="Assets/Scripts/Player.cs" Line="100" Column="99" />
+      <File FileName="Assets/Scripts/Player.cs" Line="132" Column="140" />
       <File FileName="Assets/Scripts/Effect.cs" Line="5" Column="14" />
       <File FileName="Assets/Scripts/EndScene.cs" Line="27" Column="63" />
       <File FileName="Assets/Scripts/MenuButtons.cs" Line="27" Column="27" />
       <File FileName="Assets/Scripts/Question/AllQuestions.cs" Line="12" Column="45" />
-      <File FileName="Assets/Scripts/Question/WhiteQuestions.cs" Line="63" Column="1" />
-      <File FileName="Assets/Scripts/Question/ImmigrantQuestions.cs" Line="149" Column="14" />
+      <File FileName="Assets/Scripts/Question/WhiteQuestions.cs" Line="11" Column="50" />
+      <File FileName="Assets/Scripts/Question/ImmigrantQuestions.cs" Line="58" Column="81" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
